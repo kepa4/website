@@ -23,19 +23,68 @@ h1 {
 
 .container{
   background-color: white;
-  margin: 0;
-  display: inline-flex;
+  margin: auto;
+  width: 100%;
+  position: relative;
+  display: inline-block;
 
 }
 
 .right {
-  position: sticky;
   right: 0px;
 
+
+
 }
+
 .left {
-  position: sticky;
-  left: 0px
+  left: 0px;
+
+
+
+}
+
+.center {
+  margin: auto;
+  width: 33%;
+
+}
+
+.right p {
+  margin: 0;
+  width: 33%;
+
+
+
+}
+
+.left p {
+  margin: 0;
+  width: 33%;
+
+}
+
+.center img {
+  margin: auto;
+  position: absolute;
+
+
+}
+
+.left img{
+  display: inline-block;
+  margin: auto;
+  width: 33%;
+  position: absolute;
+
+
+}
+
+.right img {
+  margin: auto;
+  position: absolute;
+  right: 0px;
+  width: 33%;
 
 
 }
@@ -43,13 +92,18 @@ h1 {
 .container p {
   margin: 0;
   text-align: left;
-  display: inline;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 200px;
+  display: inline-block;
+  float: left;
 
 }
+
+.container img {
+  margin: 0;
+  display: inline-block;
+  float: left;
+
+}
+
 
 p {
   font-family: "Oswald", serif;
@@ -100,23 +154,20 @@ p {
 }
 
 footer {
-  position: bottom;
+  position: relative;
   background-color: #b3b3b3;
+  width: 100%;
   min-height: 50px;
   margin: 5px 0px 5px 0px;
-  padding: 5px;
+  display: inline-block;
 
 }
 
-.address{
-
-}
 
 img {
-  display: block;
-  margin: auto;
-  padding: 20px 0px 20px 5px;
-  width: 50%;
+  display: inline-block;
+  position: relative;
+
 
 }
 
@@ -124,5 +175,6 @@ footer p {
   font-size: 15px;
   font-style: "Oswald", serif;
   text-align: left;
+  margin-left: 10px;
 
 }
